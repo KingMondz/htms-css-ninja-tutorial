@@ -21,7 +21,7 @@
         <p>My <strong>billionth</strong> <em>webpage</em></p>
         <!--strong makes it bold while em makes it itallicized aka embeded-->
         <p>I am <small>unbwogable</small></p>
-        <!--small makes it smaller-->
+        <!--small makes it  smaller-->
     </div>
 
     <div>
