@@ -53,7 +53,8 @@
         */
         #This is the newest one...a For-each loop. convenience
         foreach ($genders as $key => $value) {
-            echo  "<input type='radio' name='gender' value='.$value.'> $value";
+            echo  "<input type='radio' name='gender' value='.$value.' id='.$value.'>";
+            echo "<label for='.$value.'> $value</label>";
             echo "<br>";
         }
         ?>
