@@ -23,7 +23,11 @@
          Also note that the ID is a unique Identifier -->
          <!-- the name taf thet will be adding here ca be used for server 
          side processing like calling it from PHP and shit like that 
-        NAme tag is also usefull or grouping tugetha radio buttons-->
+        NAme tag is also usefull or grouping tugetha radio buttons and also enables that 
+        you only select one of them at a time, for exampo.. somewhere below -->
+        <!-- also discovered the shortcut (input:radio) which translates to (<input type="radio" name="" id="">)
+            very nais indeed-->
+        <!-- Also discovered that "value" attribute is what is submitted when the radio group is actioned -->
         <label for="username">Enter Username:</label>
         <input type="text" id="username" name="username">
         <br><br>
@@ -32,6 +36,24 @@
         <br><br>
         <label for="password">Enter Password:</label>
         <input type="password" id="password" name="password">
+        
+        <div>
+        <?php
+        #call me genius coz i've just thought this one through...Yeabooo
+        $genders = array('Male','Female','Rather Not Say');
+        $genderValues = count($genders);
+
+        $genderValue = 0;
+        while ($genderValue <= ($genderValues - 1) ) 
+            {
+            echo "<input type='radio' name='gender' value='. $genders[$genderValue] .'> $genders[$genderValue] ";
+            $genderValue++;
+            ?>
+            <br>
+            <?php
+            }
+        ?>
+        </div>
 
     </form>
 </body>
