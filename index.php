@@ -17,7 +17,7 @@
         </a>
     </div>
     <h1>Html forms</h1>
-    <form>
+    <form action="">
         <!-- The "ID" tag can ce used to hook from JS/
          can also be used to syle in CSS/ BAsically a refrence/
          Even linking it up with a label as I proceed
@@ -43,6 +43,7 @@
         #call me genius coz i've just thought this one through...Yeabooo
         $genders = array('Male','Female','Other','Rather_Not_Say');
         /*
+            Less efficient
             $genderValues = count($genders);
             $genderValue = 0;
             while ($genderValue <= ($genderValues - 1) ) 
@@ -52,6 +53,7 @@
                 }
         */
         #This is the newest one...a For-each loop. convenience
+        #AKA more efficient
         foreach ($genders as $key => $value) {
             echo  "<input type='radio' name='gender' value='.$value.' id='.$value.'>";
             echo "<label for='.$value.'> $value</label>";
