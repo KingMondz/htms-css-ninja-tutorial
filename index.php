@@ -40,18 +40,21 @@
         <div>
         <?php
         #call me genius coz i've just thought this one through...Yeabooo
-        $genders = array('Male','Female','Rather Not Say');
-        $genderValues = count($genders);
-
-        $genderValue = 0;
-        while ($genderValue <= ($genderValues - 1) ) 
-            {
-            echo "<input type='radio' name='gender' value='. $genders[$genderValue] .'> $genders[$genderValue] ";
-            $genderValue++;
-            ?>
-            <br>
-            <?php
-            }
+        $genders = array('Male','Female','Other','Rather_Not_Say');
+        /*
+            $genderValues = count($genders);
+            $genderValue = 0;
+            while ($genderValue <= ($genderValues - 1) ) 
+                {
+                echo "<input type='radio' name='gender' value='. $genders[$genderValue] .'> $genders[$genderValue] ";
+                $genderValue++;
+                }
+        */
+        #This is the newest one...a For-each loop. convenience
+        foreach ($genders as $key => $value) {
+            echo  "<input type='radio' name='gender' value='.$value.'> $value";
+            echo "<br>";
+        }
         ?>
         </div>
 
