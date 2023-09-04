@@ -23,6 +23,11 @@ ul{
     /* or */
     border-bottom: 4px solid crimson;
     border-left: 6px dashed orange;
-    border-right: 6px dashed black;
+    border-right: 6px dotted black;
     border-top: 5px solid crimson;
+}
+li{
+    list-style-type: square; /*is normally disk by default */
+    /* text-shadow: -2px -2px lightgray ;takes in three properties. ie (offset to the right of the shadow, inverse direction(Yaani up or down), color of the shadow) */
+    text-shadow: -2px -2px #aca2a2;
 }
