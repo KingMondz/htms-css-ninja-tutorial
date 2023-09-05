@@ -1,0 +1,9 @@
+span{
+    /* display: block; */
+    margin: 20px;
+}
+div{
+    border: 2px solid crimson;
+    padding: 20px;
+    margin: 20px;
+}
